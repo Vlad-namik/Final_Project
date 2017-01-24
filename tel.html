@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phones</title>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="data.js"></script>
+    <script src="lot-building.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content-block-style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id = "header">
+            <div class="search">
+                <input type="search" name="q" class = "finder" placeholder="Поиск по сайту">
+                <button class="btn-srch"><img class="srch" src="images/search.png"></button>
+            </div>
+            <div class="logo">
+                <a href="http://localhost:63342/direct-final-project/index.html?_ijt=hho5osieum3ibe8i3jdj5r4qg8#">
+                    <img class="lg" src="images/auction.png">
+                </a>
+            </div>
+        </div>
+        <div class = "nav-bar">
+            <ul class="nav-bar-list">
+                <li><a href="http://localhost:63342/direct-final-project/tel.html?_ijt=6i5e30fifp9ggk3nk1bechqr7m">Телефон</a></li>
+                <li><a href="http://localhost:63342/direct-final-project/tablet.html?_ijt=hpvi4d1iijpn44m8e0tm31kufn">Планшеты</a></li>
+                <li><a href="http://localhost:63342/direct-final-project/headphone.html?_ijt=6rgh55gdn7bo4ed6pvqntnv9sd">Наушники</a></li>
+                <li><a href="http://localhost:63342/direct-final-project/contacts.html?_ijt=2q2i2l5dhhvoh8483dp6makppj">Контакты</a></li>
+            </ul>
+        </div>
+        <div class = "content">
+            <div class="content-header">
+                <p>BREADCRUMBS</p>
+            </div>
+            <div class="content-filter">
+                <h2>Подкатегории</h2>
+                <ul class="subcategories telephone">
+                    <li><a href="#">Телефоны, смартфоны </a></li> <!--не забыть js-ом добавить количество элементов в подкатегории(.length)-->
+                    <li><a href="#">Акссесуары</a></li>  <!---||--->
+                </ul>
+                <div class = "filter">
+                    <h2>Фильтр</h2>
+                    <h4>Регион</h4>
+                    <select>
+                        <option disabled>Выбрать область</option>
+                        <option value="киев">Киевская область</option>
+                        <option value="чернигов">Черниговская область</option>
+                        <option value="кировоград">Кировоградская область</option>
+                    </select>
+                    <h4>Цена (грн.)</h4>
+                    <input type="text" value="0">
+                    <span> - </span>
+                    <input type="text" value="100000">
+                    <h4>Состояние</h4>
+                    <label for="owned" class="l1">б/у</label>
+                    <label for="new">новое</label>
+                    <input type="radio" name="state" value="owned" id="owned"><Br>
+                    <input type="radio" name="state" value="new" id="new">
+                    <button class="submit">Подобрать</button>
+                </div>
+            </div>
+            <div class="content-lots">
+                <div class="content-lots-header">
+                    <select class="sort">
+                        <option value="nth">Выбор сортировки</option>
+                        <option value="prize-down">Цена по убыванию</option>
+                        <option value="prize-up">Цена по возростанию</option>
+                    </select>
+                    <div class="page-buttons">
+                        <button class="btn-bck"><<</button>
+                        <button class="btn-frwd">>></button>
+                    </div>
+                </div>
+                <div class="lots">
+                    <h2 class="m">Лоты</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

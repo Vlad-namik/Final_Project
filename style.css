@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('font/glyphicons-halflings-regular.eot');
+    src: url('font/glyphicons-halflings-regular.eot?#iefix') format("embedded-opentype"),
+         url("font/glyphicons-halflings-regular.woff2"),
+         url("font/glyphicons-halflings-regular.woff") format("woff"),
+         url("font/glyphicons-halflings-regular.ttf") format("truetype"),
+         url("font/glyphicons-halflings-regular.svg") format("svg");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "MyWebFont" ,Fallback, sans-serif;
+    word-spacing: -8px;
+}
+
+p {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+#wrapper {
+    /*width: 90.5%;*/
+    background-image: url("images/back.jpg") ;
+    width: 100%;
+    /*outline: 1px dotted black;*/
+    height: auto;
+    padding-bottom: 40px;
+}
+/*--header--*/
+#header {
+    background: url("images/wall1.jpg") -500px -650px;
+    height: 150px;
+}
+
+.search {
+    margin-top: 7%;
+    margin-left: 16%;
+    height: 30px;
+    display: inline-block;
+}
+
+input[type=search] {
+    vertical-align: middle;
+    height: 100%;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+.btn-srch{
+    vertical-align: middle;
+    height: 90%;
+    background-color: rgba(63, 149, 204, 0.67);
+    border-radius: 8px;
+}
+
+.srch {
+    height: 100%;
+}
+
+.logo {
+    width: 160px;
+    position: absolute;
+    margin-top: -8.5%;
+    margin-left: 43.5%;
+}
+
+.lg {
+    width: 100%;
+    height: 100%;
+}
+/*--!!!--*/
+
+/*--navigation bar--*/
+.nav-bar{
+    height: 50px;
+    /*background-color: rgba(228, 219, 219, 0.67);*/
+    background-color: rgba(183, 208, 234, 0.67);
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-bar-list{
+    margin-left: 21.5%;
+}
+
+li {
+    padding: 5px 50px 5px 50px;
+    border-right: 1px solid black;
+    line-height: 20px;
+    margin: 0.5em 0 1em 0;
+    display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+    color: rgba(205, 15, 7, 0.67);
+}
+
+li:last-child {
+    border: none;
+}
+
+li a:hover {
+    /*background-color: rgba(134, 193, 234, 0.67);*/
+    color: black;
+}
+/*--!!!--*/
+
+/*--slider--*/
+.slider {
+    /*outline: 1px red dotted;*/
+    border: 1px solid red;
+    border-radius: 4px;
+    width: 40%;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-left {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: -150px;
+    border: 1px solid red;
+}
+
+.carousel-right{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 445px;
+    margin-top: -150px;
+    border: 1px solid red;
+}
+
+/*--!!!--*/
+
+/*--content*/
+.content-main {
+    margin-top: 10px;
+    margin-left: 8%;
+    /*border-top:1px solid black;*/
+    /*outline: 1px dotted rgba(3, 14, 108, 0.67);*/
+    height: 300px;
+}
+
+.lots-div{
+    outline: 1px dotted red;
+    display: inline-block;
+    width: 30%;
+    height: 80%;
+    text-align: center;
+}
+
+.lots-img {
+    margin-top: 3%;
+    height: 60%;
+    width: 50%;
+}
+
+.lots-div p {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--!!!--*/
+
+/*--bottom*/
+.bottom{
+    text-align: center;
+    height: 50px;
+    /*background-color: rgba(228, 219, 219, 0.67);*/
+    background-color: #BBEBFF;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+}
+
+.bottom  h3 {
+    margin-top: 7px;
+}
+
+/*--!!!--*/
+
+.map-container {
+    width: 100%;
+    height: 30%;
+}
+
+.map-img {
+    width: 70%;
+    border: 1px solid red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    /*display: block;*/
+    padding: 1%;
+    margin-top: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    outline: 1px green solid;
+    /*background-color: aliceblue;*/
+    /*opacity: 0.4;*/
+    background: rgb(234, 219, 223); /* Fall-back for browsers that don't
+                                    support rgba */
+    background: rgba(234, 219, 223, 0.25);
+}
+
+@media screen and (max-width: 1240px) {
+    .nav-bar-list{
+        margin-left: 21%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .nav-bar-list{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .nav-bar-list{
+        margin-left: 19%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .search{
+        margin-left: 10%;
+    }
+
+    .nav-bar-list{
+        margin-left: 18%
+    }
+    .content-main{
+        margin-left: 5%;
+    }
+
+    .content-main {
+        margin-top: 25px;
+        margin-left: 5%;
+        height: 300px;
+    }
+
+    .lots-div{
+        display: inline-block;
+        width: 33%;
+        height: 70%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .nav-bar-list{
+        margin-left: 17%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .nav-bar-list{
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .nav-bar-list{
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .nav-bar-list{
+        margin-left: 14%;
+    }
+
+    .content-main{
+        margin-left: 5%;
+    }
+
+    .lots-div{
+        display: inline-block;
+        width: 33.3%;
+        height: 70%;
+        text-align: center;
+    }
+
+    .lots-img {
+        margin-top: 3%;
+        height: 60%;
+        width: 50%;
+    }
+
+    .lots-div p {
+        font-size: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lots-div h2{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .nav-bar-list{
+        margin-left: 13%;
+    }
+}
+
+@media screen and (max-width: 928px) {
+   .finder{
+       width: 140px;
+   }
+
+    .nav-bar-list{
+        margin-left: 17%;
+    }
+
+    .logo{
+        margin-left: 41%
+    }
+    li {
+        padding: 3px 40px 3px 30px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .nav-bar-list{
+        margin-left: 16%;
+    }
+    li {
+        padding: 3px 40px 3px 30px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+
+    .lots-div h2{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .nav-bar-list{
+        margin-left: 15%;
+    }
+    li {
+        padding: 3px 40px 3px 30px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .nav-bar-list{
+        margin-left: 15.3%;
+    }
+    li {
+        padding: 3px 30px 3px 30px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .nav-bar-list{
+        margin-left: 14.5%;
+    }
+    li {
+        padding: 3px 30px 3px 30px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .nav-bar-list{
+        margin-left: 13%;
+    }
+    li {
+        padding: 3px 30px 3px 30px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 40%;
+    }
+
+    .map-img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 692px) {
+    .nav-bar-list{
+        margin-left: 15.5%;
+    }
+    li {
+        padding: 3px 20px 3px 20px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .nav-bar-list{
+        margin-left: 12%;
+    }
+    li {
+        padding: 3px 20px 3px 20px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+
+    .search{
+        margin-left: 10%;
+    }
+    .logo{
+        width: 130px;
+        margin-top: -8%;
+        margin-left: 40%;
+    }
+
+    .lots-div h2{
+        font-size: 12px;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 60%;
+    }
+
+    .map-img {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .nav-bar-list{
+        margin-left: 15%;
+    }
+    li {
+        padding: 3px 10px 3px 10px;
+        line-height: 20px;
+        margin: 0.5em 0 1em 0;
+        display: inline-block;
+    }
+
+    .finder{
+        width: 100px;
+    }
+
+    .search{
+        margin-left: 6%;
+    }
+    .logo{
+        width: 130px;
+        margin-top: -8%;
+        margin-left: 40%;
+    }
+
+    .lot h2{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .map-container {
+        width: 100%;
+        height: 60%;
+    }
+
+    .map-img {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .lot h2{
+        font-size: 9px;
+    }
+
+    .lot{
+        height: 150px;
+    }
+
+    .nav-bar-list{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nav-bar-list{
+        margin-left: 6%;
+    }
+    .logo{
+        margin-left: 35%;
+    }
+
+    .slider{
+        height: 250px;
+    }
+}
+
+
+
+
+

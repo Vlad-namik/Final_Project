@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('font/glyphicons-halflings-regular.eot');
+    src: url('font/glyphicons-halflings-regular.eot?#iefix') format("embedded-opentype"),
+    url("font/glyphicons-halflings-regular.woff2"),
+    url("font/glyphicons-halflings-regular.woff") format("woff"),
+    url("font/glyphicons-halflings-regular.ttf") format("truetype"),
+    url("font/glyphicons-halflings-regular.svg") format("svg");
+}
+
+* {
+    font-family: "MyWebFont" ,Fallback, sans-serif;
+    word-spacing: -8px;
+}
+p {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+}
+.content {
+    width: 100%;
+    margin-top: 3%;
+    /*outline: 1px solid black;*/
+    padding-bottom: 4%;
+}
+
+.content-header {
+    width: 100%;
+    outline: 1px solid #4CAF50;
+    height: 40px;
+    padding: 10px;
+}
+
+.content-filter {
+    padding-top: 1%;
+    width: 25%;
+    /*display: inline-block;*/
+    float: left;
+    border: 1px solid black;
+    padding-bottom: 1%;
+}
+
+.content-filter > * {
+    margin-left: 4%;
+}
+
+.content-filter li {
+    display: block;
+    border: none;
+    padding-top: 2px;
+    margin: 0;
+}
+
+.subcategories{
+    list-style-type:circle;
+    margin-left: -2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid black;
+}
+
+.filter h4 {
+    margin-top: 3%;
+}
+
+.filter h2 {
+    margin-top: 2%;
+}
+
+.filter select {
+    margin-top: 3%;
+}
+
+input[type=text]{
+    text-align: center;
+    border: 1px solid rgba(180, 0, 11, 0.67);
+    border-radius: 4px;
+    margin-top: 2%;
+    width: 80px;
+    height: 25px;
+}
+
+.content-lots {
+    width: 75%;
+    display: inline-block;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label {
+    font-style: italic;
+    margin-left: 2%;
+    display: block;
+}
+
+.submit {
+    font-size: 14px;
+    width: 100px;
+    margin-left: 32%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.l1{
+    margin-top: 2%;
+}
+
+select {
+    word-spacing: 0px;
+}
+
+.content-lots-header{
+    width: 100%;
+    outline: 1px dotted greenyellow;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+
+.sort {
+    margin-left: 7%;
+    border-bottom: 1px solid black;
+}
+
+.page-buttons {
+    margin-left: 60%;
+    display: inline-block;
+}
+
+.btn-bck, .btn-frwd{
+    padding: 5px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.lots {
+    outline: 1px solid #4CAF50;
+    padding-bottom: 5%;
+}
+
+.m {
+    margin-left: 3%;
+    padding-top: 2%;
+}
+
+.lot {
+    margin-top: 2%;
+    margin-left: 7%;
+    border: 1px solid brown;
+    border-radius: 5px;
+    height: 200px;
+    width: 85%;
+}
+
+.lot-left {
+    border: 1px solid brown;
+    border-radius: 5px;
+    height: 100%;
+    float: left;
+    width: 30%;
+}
+
+.lot-right {
+    width: 70%;
+}
+
+.lot-main-image {
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    width: 95%;
+    height: 95%;
+}
+
+.lot-name {
+    text-align: center;
+    outline: dashed 1px red;
+    margin-left: 53%;
+    margin-top: 3%;
+    /*width: 53%;*/
+    width: 73%;
+}
+
+.lot-prize {
+    text-align: center;
+    outline: dashed 1px red;
+    color: red;
+    width: 40%;
+    margin-left: 67%;
+    margin-top: 3%;
+}
+
+.lot-region {
+    outline: red dotted 1px;
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 71%;
+    width: 30%;
+}
+
+.lot-shipment{
+    text-align: center;
+    outline: red dotted 1px;
+    margin-top: 1%;
+    margin-left: 66%;
+    width: 40%;
+}
+
+@media screen and (max-width: 960px) {
+    .content-filter h2 {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+    .lot{
+        height: 170px;
+    }
+    .lot-name{
+        font-size: 16px;
+    }
+
+    .lot-prize{
+        font-size: 15px;
+    }
+
+    .lot-region{
+        margin-top: 6%;
+        font-size: 12px;
+    }
+
+    .lot-shipment{
+        font-size: 12px;
+    }
+
+    .submit{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .page-buttons{
+        margin-left: 50%;
+    }
+
+    .lot{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    figcaption{
+        width: 40%;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 790px) {
+    /*.page-buttons{*/
+        /*margin-left: 50%;*/
+    /*}*/
+
+    /*.lot{*/
+        /*height: 150px;*/
+    /*}*/
+    select{
+        width: 130px;
+    }
+
+    .filter input {
+        width: 54px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .lot{
+        height: 120px;
+    }
+
+    .lot-name{
+        font-size: 14px;
+    }
+
+    .lot-prize{
+        font-size: 13px;
+    }
+
+    .lot-region{
+        margin-top: 6%;
+        font-size: 12px;
+    }
+
+    .lot-shipment{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    figcaption{
+        width: 40%;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .page-buttons{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .lot{
+        height: 100px;
+    }
+
+    .lot-name{
+        font-size: 12px;
+    }
+
+    .lot-prize{
+        font-size: 10px;
+    }
+
+    .lot-region{
+        margin-top: 4%;
+        font-size: 10px;
+    }
+
+    .lot-shipment{
+        font-size: 10px;
+    }
+
+    .submit{
+        margin-left: 14%;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    figcaption{
+        width: 40%;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .content-filter h2{
+        font-size: 14px;
+    }
+    .subcategories a{
+        font-size: 12px;
+    }
+
+    .filter h4{
+        font-size: 12px;
+    }
+
+    label{
+        font-size: 12px;
+    }
+
+    .filter select{
+        width: 80px;
+    }
+
+    .filter input{
+        width: 40px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .page-buttons{
+        margin-left: 20%;
+    }
+
+    .content-filter h2{
+        font-size: 12px;
+    }
+
+    .subcategories a{
+        font-size: 10px;
+    }
+
+    .filter h4{
+        font-size: 10px;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    .filter select{
+        width: 70px;
+    }
+
+     .submit{
+        width: 50px;
+         height: 30px;
+         font-size: 8px;
+    }
+}
+

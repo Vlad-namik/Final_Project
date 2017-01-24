@@ -1,0 +1,317 @@
+.lot-main {
+    width: 90%;
+    height: 540px;
+    /*outline: 1px solid #4CAF50;*/
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.current-lot {
+    width: 100%;
+    height: 100%;
+    /*outline: 1px solid green;*/
+    padding-bottom: 30%;
+}
+
+.lot-left-block{
+    margin-top: 2%;
+    width: 50%;
+    height: 100%;
+    outline: 1px solid #4CAF50;
+    /*display: inline-block;*/
+    float: left;
+}
+
+.lot-right-block{
+    margin-top: 2%;
+    width: 50%;
+    height: 100%;
+    /*margin-left: 50%;*/
+    outline: 1px solid #4CAF50;
+    /*display: inline-block;*/
+    float: right;
+
+}
+
+.lot-left-block-image{
+    width: 100%;
+    height: 80%;
+    outline: 1px solid brown;
+    text-align: center;
+}
+
+.lot-left-block-images{
+    /*outline: 1px solid yellow;*/
+    width: 100%;
+    height: 20%;
+}
+
+.lot-left-block-images-list{
+    text-align: center;
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    outline: 1px solid red;
+}
+
+.lot-left-block-images-list img {
+    width: 60%;
+    padding: 5px;
+}
+
+.images{
+    width: 80%;
+    height: 100%;
+}
+
+.lot-main-name {
+    padding: 0.5%;
+    text-align: center;
+    outline: dashed 1px red;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.lot-main-prize {
+    padding: 0.5%;
+    text-align: center;
+    outline: dashed 1px red;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: red;
+    /*margin-left: 10%;*/
+}
+
+.rule{
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 12%;
+}
+
+.submit{
+    margin:3% auto 0 auto;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    text-align: center;
+    display: block;
+    width: 28%;
+}
+
+input[type=text].register-phone{
+    margin-left: 22%;
+    width: 120px;
+
+}
+
+input[type=text].register-cash{
+    margin-left: 10%;
+    width: 120px;
+}
+
+.properties{
+    margin-left: 5%;
+}
+
+.lot-main-bet{
+    margin-top: 8%;
+    color: red;
+}
+
+.lot-main-state{
+    margin-top: 7%;
+}
+
+
+.description{
+    font-size: 18px;
+}
+
+.description1{
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.lot-description{
+    padding-top: 20px;
+    text-align: center;
+    border: 2px solid #4CAF50;
+    width: 100%;
+    clear: both;
+    margin: 20px auto 0 auto;
+    height: auto;
+}
+
+@media screen and (max-width: 1050px) {
+
+    .lot-main{
+        height: 450px;
+    }
+
+    .lot-main-name{
+        font-size: 18px;
+    }
+
+    .lot-main-prize, .lot-main-bet, .properties{
+        font-size: 14px;
+    }
+
+    .lot-right-block .submit{
+        width: 25%;
+    }
+
+    .lot-left-block-image{
+        height: 70%;
+    }
+
+    .lot-left-block-images{
+        height: 30%;
+    }
+
+    .lot-description  h4{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    input[type=text].register-phone{
+        margin-left: 22%;
+        font-size: 8px;
+        width: 90px;
+
+    }
+
+    input[type=text].register-cash{
+        margin-left: 8%;
+        font-size: 8px;
+        width: 90px;
+    }
+
+    .lot-right-block .submit{
+        width: 25%;
+        font-size: 11px;
+    }
+
+    .description1{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .lot-main{
+        height: 350px;
+    }
+
+    .lot-main-name{
+        font-size: 14px;
+    }
+
+    .lot-main-prize, .lot-main-bet, .properties{
+        font-size: 12px;
+    }
+
+    .lot-main-state{
+        margin-top: 3%;
+    }
+
+    .lot-right-block .submit{
+        width: 25%;
+
+    }
+
+    .lot-left-block-image{
+        height: 70%;
+    }
+
+    .lot-left-block-images{
+        height: 30%;
+    }
+
+    .lot-description  h4{
+        font-size: 14px;
+    }
+
+    .description1{
+        font-size: 10px;
+    }
+
+    .rule{
+        margin-top: 9%;
+        font-size: 12px;
+    }
+
+    input[type=text].register-phone{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rule{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    input[type=text].register-phone{
+        margin-left: 14%;
+    }
+
+    .lot-main{
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    input[type=text].register-phone{
+        margin-left: 20%;
+        width: 50px ;
+    }
+
+    input[type=text].register-cash{
+        width: 50px;
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .lot-main{
+        height: 300px;
+    }
+
+    .lot-left-block-image{
+        height: 80%;
+    }
+
+    .lot-left-block-images{
+        height: 20%;
+    }
+
+    .lot-main-name{
+        font-size: 12px;
+    }
+
+    .lot-main-prize{
+        font-size: 10px;
+    }
+    .rule{
+        font-size: 9px;
+    }
+    input[type=text].register-phone{
+        height: 20px;
+        margin-left: 18%;
+    }
+
+    input[type=text].register-cash{
+        height: 20px;
+        margin-left: 10%;
+    }
+
+    .properties{
+        font-size: 10px;
+    }
+}
